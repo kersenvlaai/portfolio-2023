@@ -1,6 +1,9 @@
 import Head from "next/head";
 import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiFillLinkedin } from "react-icons/ai";
+import { AiFillLinkedin, AiFillInstagram, AiFillYoutube } from "react-icons/ai";
+import { WiDaySunnyOvercast } from "react-icons/wi";
+import Image from "next/image";
+import deved from "../public/dev-ed-wave.png";
 
 export default function Home() {
   return (
@@ -17,7 +20,7 @@ export default function Home() {
             <h1 className="text-xl">Developed by Sonny</h1>
             <ul className="flex items-center">
               <li>
-                <BsFillMoonStarsFill className="cursor-pointer text-2xl" />
+                <BsFillMoonStarsFill className="cursor-pointer text-89999999999999999999999999999999999999999999999999999999999992xl" />
               </li>
               <li>
                 <a
@@ -29,12 +32,47 @@ export default function Home() {
               </li>
             </ul>
           </nav>
-          <div>
-            <h2>Sonny Luu</h2>
-            <h3>Developer and designer.</h3>
+          <div className="text-center p-10">
+            <h2 className="text-5xl py-2 text-teal-600 font-medium">
+              Sonny Luu
+            </h2>
+            <h3 className="text-2xl py-2">Developer and designer.</h3>
+            <p className="text-md py-5 text-gray-800">
+              Currently working as a front-end developer at{" "}
+              <span className="text-teal-500">Capgemini</span> Financial
+              Services.
+            </p>
           </div>
-          <div>
+          <div className="text-4xl flex justify-center gap-16 py-3 text-gray-600">
             <AiFillLinkedin />
+            <AiFillInstagram />
+            <WiDaySunnyOvercast />
+          </div>
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
+            <Image src={deved} layout="fill" objectFit="cover" />
+          </div>
+        </section>
+        <section>
+          <div>
+            <h3 className="text-3xl py-1">About me</h3>
+            <p className="text-md py-2 text-gray-800">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex non
+              dolorem recusandae voluptates veritatis quaerat sint sequi,
+              dolorum error reprehenderit. Ab qui repudiandae corrupti sit
+              dolorum ducimus nobis maiores adipisci.
+            </p>
+            <p className="text-md py-2 text-gray-800">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex non
+              dolorem recusandae voluptates veritatis quaerat sint sequi,
+              dolorum error reprehenderit. Ab qui repudiandae corrupti sit
+              dolorum ducimus nobis maiores adipisci.
+            </p>
+            <p className="text-md py-2 text-gray-800">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex non
+              dolorem recusandae voluptates veritatis quaerat sint sequi,
+              dolorum error reprehenderit. Ab qui repudiandae corrupti sit
+              dolorum ducimus nobis maiores adipisci.
+            </p>
           </div>
         </section>
       </main>
